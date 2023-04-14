@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App{
+  background-color: lightgrey;
+  
+}
+
+header {
+  height: 35vh;
+  width: 100vw;
+  background-image: url('./images/pattern-bg-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-size: x-large;
+}
+
+input {
+padding-right: 50px;
+height: 55px;
+border-radius: 10px;
+border: none;
+outline: none;
+width: 85vw;
+padding-left: 20px;
+font-size: 18px;
+
+color: hsl(0, 0%, 17%)
+}
+
+button {
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  top: 0;
+  right: 0;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: black;
+  border: none;
+}
+
+label {
+  position: relative;
+  display: inline-block;
+}
+
+p {
+  color:hsl(0, 0%, 59%) ;
+  font-size: 15px;
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+.box {
+background-color: white;
+color: black;
+width: 80vw;
+border-radius: 10px;
+position: absolute;
+top: 180px;
+padding-top: 18px;
+z-index: 2;
+}
+
+#map { 
+  height: 65vh;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+z-index: 1;
+ }
+
+.barra {
+  border-right: 1px solid lightgrey;
+}
+
+ @media (min-width: 901px){
+  header {
+    background-image: url('./images/pattern-bg-desktop.png');
+  }
+
+  input {
+    max-width: 40vw;
+  }
+
+.box {
+  display: flex;
+  height: 20vh;
+  margin-top: 5vh;
+  align-items: center;
+}
+
+.datos {
+  width: 25%;
+}
+ }
